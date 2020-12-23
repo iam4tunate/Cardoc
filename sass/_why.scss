@@ -1,0 +1,72 @@
+.why {
+    &__grid {
+        @media (max-width: $bp-lg) {
+            flex-direction: column;
+        }
+    }
+
+    &__col-1 {
+        position: relative;
+        flex-basis: 50%;
+    }
+
+    &__col-2 {
+        flex-basis: 50%;
+        padding: 5rem 0 4rem 4rem;
+        align-items: start;
+
+        @media (max-width: $bp-sm) {
+            flex-basis: 100%;
+            padding-top: 2rem;
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+
+        &>p {
+            padding-top: 1.5rem;
+            padding-bottom: 4rem;
+            width: 90%;
+            line-height: 2;
+
+            @media (max-width: $bp-sm) {
+                width: 100%;
+            }
+        }
+
+        &>.why__check {
+            padding-bottom: 1.8rem;
+
+            &>.why__check-text {
+                line-height: .9;
+                font-weight: 500;
+                color: $color-brown;
+                line-height: 1.6;
+            }
+
+            &>.why__check-icon {
+                height: 1.4rem;
+                width: 1.4rem;
+                margin-right: .8rem;
+            }
+        }
+    }
+
+    &__photo {
+        height: 95vh;
+        background-image: url(../images/bg-why.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @media (max-width: $bp-lg) {
+            width: 100vw;
+            height: 70vh;
+            margin-bottom: 4rem;
+        }
+
+        &-icon {
+            height: 6rem;
+            width: 6rem;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    @media (max-width: $bp-lg) {
+        font-size: 58%;
+    }
+
+    @media (max-width: $bp-sm) {
+        font-size: 55%;
+    }
+}
+
+body {
+    font-family: $font-roboto;
+    font-size: 1.4rem;
+    letter-spacing: 1.5px;
+    overflow-x: hidden;
+    line-height: 1.7;
+}
+
+.pages__header {
+    height: 45vh;
+    background-image: linear-gradient(rgba($color-brown, .5), rgba($color-brown, .5)),
+        url(../images/slider_1_3-copyright.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    color: $color-white;
+
+    &-title {
+        font-weight: 700;
+        font-size: 5rem;
+        padding-bottom: 2rem;
+    }
+
+    &-nav {
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+}

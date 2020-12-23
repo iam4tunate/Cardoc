@@ -1,0 +1,46 @@
+.teams {
+    background-color: $color-light-brown;
+    padding-top: 6rem;
+    padding-bottom: 12rem;
+
+    &>.section__heading {
+        padding: 7rem 0 8rem;
+        text-align: center;
+    }
+
+    &-grid {
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        grid-column-gap: 3rem;
+        grid-row-gap: 5rem;
+    }
+}
+
+.team {
+    &-info {
+        padding-top: 1rem;
+
+        &>h5 {
+            font-family: $font-poppins;
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+
+        &>p {
+            font-weight: 400;
+            color: $color-orange;
+            font-size: 1.3rem;
+        }
+    }
+
+    &-photo {
+        border-radius: 10px;
+        background-size: contain;
+        background-position: top;
+        background-repeat: no-repeat;
+
+        img {
+            border-radius: 10px;
+        }
+    }
+
+}
